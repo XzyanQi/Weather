@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Weather Result</title>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Weather in <%= weather.city %></h1>
+        <p>Temperature: <%= weather.temperature %> °C</p>
+        <p>Description: <%= weather.description %></p>
+        <p>Humidity: <%= weather.humidity %> %</p>
+        <p>Wind Speed: <%= weather.windSpeed %> m/s</p>
+        <div class="cloud"></div> <!-- Moving Cloud -->
+        <a href="/">Check another city</a>
+    </div>
+</body>
+</html>
